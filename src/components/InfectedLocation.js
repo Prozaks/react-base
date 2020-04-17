@@ -5,6 +5,24 @@ import DeathQuantity from './DeathQuantity';
 import RecoveredQuantity from './RecoveredQuantity';
 import ActiveQuantity from './ActiveQuantity';
 import TotalTested from './TotalTested';
+import {
+  AP,
+  AN,
+  AT,
+  CO,
+  VS,
+  RM,
+  LI,
+  ML,
+  NB,
+  BI,
+  AR,
+  LR,
+  LL,
+  AI,
+  MA
+} from './../constants/regions'
+
 
 // Arrow Function
 const InfectedLocation = () => (
@@ -12,12 +30,18 @@ const InfectedLocation = () => (
     <ul>
       <li>
         <a href="">
-          <Region></Region>
-          <InfectedQuantity></InfectedQuantity>
-          <DeathQuantity></DeathQuantity>
-          <RecoveredQuantity></RecoveredQuantity>
-          <ActiveQuantity></ActiveQuantity>
-          <TotalTested></TotalTested>
+          <Region 
+            region={"Arica y Parinacota"}/>
+          <InfectedQuantity 
+            infected={150}/>
+          <DeathQuantity 
+            death={30}/>
+          <RecoveredQuantity 
+            recovered={60}/>
+          <ActiveQuantity 
+            active={60}/>
+          <TotalTested 
+            tested={500}/>
         </a>
       </li>
     </ul>
@@ -25,19 +49,3 @@ const InfectedLocation = () => (
 );
 
 export default InfectedLocation;
-
-
-//////// <li><a href=""> Antofagasta </a></li>
-//////// <li><a href=""> Atacama </a></li>
-//////// <li><a href=""> Coquimbo </a></li>
-//////// <li><a href=""> Valparaíso </a></li>
-//////// <li><a href=""> Metropolitana </a></li>
-//////// <li><a href=""> O'Higgins </a></li>
-//////// <li><a href=""> Maule </a></li>
-//////// <li><a href=""> Ñuble </a></li>
-//////// <li><a href=""> Biobío </a></li>
-//////// <li><a href=""> Araucanía </a></li>
-//////// <li><a href=""> Los Ríos </a></li>
-//////// <li><a href=""> Los Lagos </a></li>
-//////// <li><a href=""> Aysén </a></li>
-//////// <li><a href=""> Magallanes </a></li>

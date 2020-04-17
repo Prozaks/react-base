@@ -1,7 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const ActiveQuantity = () => (
-  <div>Casos Activos: 30</div>
+const ActiveQuantity = ({ active }) => (
+  <p>
+    Casos Activos: {`${active}`}
+  </p>
 );
+
+ActiveQuantity.propTypes = {
+  active: PropTypes.number.isRequired
+};
 
 export default ActiveQuantity;
